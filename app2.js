@@ -1,4 +1,4 @@
-function name() {
-  console.log('z');
+function myFunction(a, b) {
+  return (a * b) / 2;
 }
-console.log(name());
+myFunction(10, 2);
