@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Chat Program</title>
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+
+      #chat-container {
+        height: 400px;
+        width: 600px;
+        margin: 20px auto;
+        background-color: #fff;
+        border: 2px solid #ccc;
+        padding: 10px;
+        overflow-y: scroll;
+      }
+
+      #chat-form {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #chat-message {
+        height: 30px;
+        width: 400px;
+        padding: 5px;
+        margin-right: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        color: #333;
+      }
+
+      #chat-message:focus {
+        outline: none;
+        border-color: #66afe9;
+        box-shadow: 0 0 5px #66afe9;
+      }
+
+      button[type="submit"] {
+        height: 40px;
+        padding: 0 20px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+
+      .message {
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .message-time {
+        margin-right: 10px;
+        font-size: 12px;
+        color: #666;
+      }
+
+      .message-content {
+        font-size: 16px;
+        color: #333;
+      }
+
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background-color: #f2f2f2;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chat-container"></div>
+    <form id="chat-form">
+      <input type="text" id="chat-message" placeholder="Type your message..." />
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="chat.js"></script>
+
+  </body>
+</html>
